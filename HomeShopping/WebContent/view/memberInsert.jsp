@@ -11,15 +11,15 @@
 </style>
 <section>
 	<%
-		int cumaxn = (int)request.getAttribute("mmxx");
+		int cusMaxNo = (int)request.getAttribute("cusMaxNo");
 	%>
 	<div class="container">
 		<p class="title">홈쇼핑 회원 등록</p>
-		<form action="//memberInsert.do" method="post">
+		<form action="/memberInsert.do" method="post">
 			<table border="1">
 				<tr>
 					<td>회원번호(자동발생)</td>
-					<td><input type="text" name="custno" value="<%=cumaxn%>"readonly></td>
+					<td><input type="text" name="custno" value="<%=cusMaxNo%>"readonly></td>
 				</tr>
 				<tr>
 					<td>회원성명</td>
@@ -35,7 +35,7 @@
 				</tr>
 				<tr>
 					<td>가입일자</td>
-					<td><input type="text" name="joindate"></td>
+					<td><input type="date" name="joindate"></td>
 				</tr>
 				<tr>
 					<td>고객등급 [A:VIP, B:일반, C:직원]</td>

@@ -1,30 +1,22 @@
 package vo;
 
-import java.sql.Date;
-
 public class MemberMoneyVO {
 	private int custno;
-	private int saleno;
-	private int pcost;
-	private int amount;
+	private String custname;
+	private String grade;
 	private int price;
-	private String pcode;
-	private Date sdate;
 
 	public MemberMoneyVO() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public MemberMoneyVO(int custno, int saleno, int pcost, int amount, int price, String pcode, Date sdate) {
+	public MemberMoneyVO(int custno, String custname, String grade, int price) {
 		super();
 		this.custno = custno;
-		this.saleno = saleno;
-		this.pcost = pcost;
-		this.amount = amount;
+		this.custname = custname;
+		this.grade = grade;
 		this.price = price;
-		this.pcode = pcode;
-		this.sdate = sdate;
 	}
 
 	public int getCustno() {
@@ -35,28 +27,20 @@ public class MemberMoneyVO {
 		this.custno = custno;
 	}
 
-	public int getSaleno() {
-		return saleno;
+	public String getCustname() {
+		return custname;
 	}
 
-	public void setSaleno(int saleno) {
-		this.saleno = saleno;
+	public void setCustname(String custname) {
+		this.custname = custname;
 	}
 
-	public int getPcost() {
-		return pcost;
+	public String getGrade() {
+		return grade;
 	}
 
-	public void setPcost(int pcost) {
-		this.pcost = pcost;
-	}
-
-	public int getAmount() {
-		return amount;
-	}
-
-	public void setAmount(int amount) {
-		this.amount = amount;
+	public void setGrade(String grade) {
+		this.grade = grade;
 	}
 
 	public int getPrice() {
@@ -65,21 +49,5 @@ public class MemberMoneyVO {
 
 	public void setPrice(int price) {
 		this.price = price;
-	}
-
-	public String getPcode() {
-		return pcode;
-	}
-
-	public void setPcode(String pcode) {
-		this.pcode = pcode;
-	}
-
-	public Date getSdate() {
-		return sdate;
-	}
-
-	public void setSdate(Date sdate) {
-		this.sdate = sdate;
 	}
 }
